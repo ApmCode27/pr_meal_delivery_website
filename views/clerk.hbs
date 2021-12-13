@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table
+      border="1"
+      style="border-width: thin; border-spacing: 0px; border-style: none; border-color: black;"
+    >
+      <tr>
+        <th>Package name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Number of meals</th>
+        <th colspan="2">actions</th>
+      </tr>
+      {{#each data}}
+        <tr>
+          <form method="post" action="registerPackage">
+            <input type="hidden" name="id" value="{{id}}" />
+            <td><input
+                type="text"
+                name="packagename"
+                value="{{packagename}}"
+              /></td>
+            <td><input
+                type="text"
+                name="packageprice"
+                value="{{packageprice}}"
+              /></td>
+            <td><input
+                type="text"
+                name="description"
+                value="{{description}}"
+              /></td>
+            <td><input
+                type="number"
+                name="numberof"
+                value="{{numberof}}"
+              /></td>
+
+          </form>
+          <td>
+            <form method="POST" action="deletePackage">
+              <input type="hidden" name="id" value="{{id}}" />
+              <input type="submit" value="Delete" />
+            </form>
+          </td>
+        </tr>
+      {{else}}
+        <tr>
+          <td colspan="5">No Data Available</td>
+        </tr>
+      {{/each}}
+    </table>
+  </body>
+</html>

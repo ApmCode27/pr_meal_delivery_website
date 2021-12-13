@@ -1,0 +1,339 @@
+/*  space classes sites */
+/*HEADER FINDER----------------------------------*/
+
+#container_header_f {
+  width: 980 px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #7a0510;
+}
+#container_header_f div {
+  width: 350px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  align-items: flex-end;
+
+  font-family: "Stick No Bills", sans-serif;
+  color: white;
+}
+div:nth-of-type(0) {
+  align-self: flex-end;
+}
+
+.input_h {
+  border-radius: 17.5px;
+}
+
+/*  HEADER NAV-----------------------------------*/
+#container_header {
+  width: 1280;
+  margin: 0 0 15px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #c8102e;
+}
+
+.title_2 {
+  font-family: "Stick No Bills", sans-serif;
+  color: white;
+  width: 500px;
+  justify-content: flex-start;
+}
+#container_header div {
+  width: 180px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: "Stick No Bills", sans-serif;
+  color: white;
+}
+
+/*IMAGE---------------------------------------------*/
+#container_h_im {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#container_h_im div {
+  width: 980px;
+}
+#container_h_im img {
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/*TITTLE-----------------------------------------------*/
+#container_h_title {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#container_h_title div {
+  width: 980px;
+}
+#container_h_title h1 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* HEADER BUTTONS--------------------------------------*/
+#container_h_button {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#container_h_button div {
+  margin: 0 auto;
+  display: flex;
+}
+
+#container_h_button button {
+  font-family: "Stick No Bills", sans-serif;
+  width: 200px;
+  height: 38px;
+  border-radius: 7px;
+  align-content: center;
+  background-color: #c8102e;
+  border-color: white;
+  color: white;
+  font-size: 1.2 rem;
+}
+
+.anchor_1 {
+  color: white;
+}
+
+.button_h {
+  align-content: center;
+  background-color: #e63946;
+
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  padding: 10px 10px;
+  font-size: 1.4rem;
+}
+
+.link_ah {
+  color: white;
+}
+
+/*INTRODUCTION------------------------------------------*/
+
+#container_m_intro {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#container_m_intro div {
+  width: 960px;
+}
+
+.mainIntroduction {
+  font-family: proxima-nova, tahoma, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #75787b;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+
+/*CONTAINER IMAGES   --GENERAL-------------------------------->*/
+
+/*CONTAINER LOGIN   --BRANCH-S------------------------------>*/
+
+.form-container {
+  margin: 0 auto;
+  height: 500px;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: flex-start;
+}
+
+.form-containera {
+  margin: 0 auto;
+  height: 650px;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: flex-start;
+}
+
+/*CONTAINER LOGIN   --BRANCH--E------------------------------>*/
+
+#container_m_2 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#container_m_2 div {
+  width: 960px;
+}
+
+.title_3 {
+  font-family: proxima-nova, tahoma, sans-serif;
+  color: #7fa9ae;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.title_3a {
+  font-family: proxima-nova, tahoma, sans-serif;
+  color: #7fa9ae;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.7rem;
+}
+
+#container_m_2ab {
+  font-family: proxima-nova, tahoma, sans-serif;
+  color: #7fa9ae;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#container_m_2a {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#container_m_2a div {
+  width: 980px;
+}
+
+#container_m_2a div {
+  width: auto;
+  text-align: flex-start;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: proxima-nova, tahoma, sans-serif;
+  color: #75787b;
+}
+
+#container_m_2a img {
+  width: 140px;
+  height: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+#container_m_2a select {
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/*FOOTER----------------------------------------------------->*/
+
+#container_footer {
+  width: 1280;
+  margin: 0 0 15px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #c8102e;
+}
+
+.title_2f {
+  font-family: "Stick No Bills", sans-serif;
+  color: white;
+  width: 500px;
+  justify-content: flex-start;
+}
+#container_footer div {
+  width: 178px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: "Stick No Bills", sans-serif;
+  color: white;
+}
+
+/*----------NEW CHANGES LAB 4-5 --------------------------------------*/
+
+/*mealpackage .--------------------------------------------------------*/
+input[type="number"] {
+  width: 50px;
+}
+
+select {
+  position: relative;
+  top: 5px;
+}
+#add_1 {
+  position: relative;
+  top: 12px;
+
+  width: 140px;
+  background: gainsboro;
+  border: 1.5px gray;
+  border-radius: 3.5px;
+  padding: 0.55em 1.1em;
+  transition: 0.25s;
+}
+
+#add_1:hover {
+  border-color: white;
+  background: #c8102e;
+  color: white;
+  box-shadow: 0 0.5em 0.5 em -0.4em #c8102e;
+  transform: translateY(-0.25em);
+}
+
+#title_register {
+  font-family: proxima-nova, tahoma, sans-serif;
+  color: #7fa9ae;
+  font-size: 1.2rem;
+}

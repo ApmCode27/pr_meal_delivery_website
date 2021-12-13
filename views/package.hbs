@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@400;600;800&display=swap"
+      rel="stylesheet"/>
+    
+      <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+
+
+
+    <link rel="stylesheet" href="meal.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+  
+        <section id= container_header_f>
+            
+            <div>Find Us!! <i class="material-icons">my_location</i></div>
+            <div id = "loginontainer">Main <button></button>  <a href="/" class="anchor_1">  <i class="material-icons">home</i> </a> </button> </div>
+            
+
+        </section>
+
+
+        <section id= container_header>
+            <div ><h2 class="title_2">The Meal Factory  </h2></div>
+            <div >Our Company</div>
+            <div >Careers</div>
+            <div >Nutrition</div>
+            <div>Shop</div>
+
+            
+        </section>
+    </header>
+    <br>
+    <br>
+
+   
+     <section id="container_m_2ab">
+         <div><p>Create New Package. </p></div>
+         
+     </section>
+
+    
+    <section id="container_m_2a" >
+        
+
+        <div class = "form-containera">
+            <div><p></p></div>
+            <div id="customer" class = "register_form">
+
+                <form " action="/registerPackage"  method="post" >
+                    <label for="packagename" class="login">Package Name</label> <br> <br>
+                    <input id="packagename" type="text"  name="packagename"  placeholder="Enter Name" size="30" required> <br> <br>
+
+                    <label for="packageprice" class="login">Price</label> <br> <br>
+                    <input id="packageprice" type="text"  name="packageprice" class="large"  placeholder="Enter price" size="30" required> <br> <br>
+                   
+                    <label for="description" class = "login">Description</label> <br> <br>
+                    <input id= "description" type="text"  name = "description"  class="large"  placeholder="Enter description" size="40" required> <br> <br>
+                    
+                    <label for="pfoodcategory" class= "login">Food Category</label> <br> <br>
+                    <input id="pfoodcategory" type="text" name="pfoodcategory" size = "16"  placeholder="Food category"> <br> <br>
+
+                    <label for="numberof" class= "login">No of meals</label> <br> <br>
+                    <input id="numberof" type="text" name="numberof"  placeholder="#meals"> <br> <br>
+
+                    <input  type="submit" value="Submit File"  class="btn action_button"> <br>
+    
+                </form>
+    
+            </div>
+           
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+       <table
+      border="1"
+      style="border-width: thin; border-spacing: 0px; border-style: none; border-color: black;"
+    >
+      <tr>
+        <th>Package name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Number of meals</th>
+        <th colspan="2">actions</th>
+      </tr>
+      {{#each data}}
+        <tr>
+          <form method="post" action="updatePackage">
+            <input type="hidden" name="id" value="{{id}}" />
+            <td><input
+                type="text"
+                name="packagename"
+                value="{{packagename}}"
+              /></td>
+            <td><input
+                type="text"
+                name="packageprice"
+                value="{{packageprice}}"
+              /></td>
+            <td><input
+                type="text"
+                name="description"
+                value="{{description}}"
+              /></td>
+            <td><input
+                type="text"
+                name="numberof"
+                value="{{numberof}}"
+              /></td>
+            <td>  <input type="submit" value="Update" /></td>
+
+          </form>
+          <td>
+            <form method="POST" action="deletePackage">
+              <input type="hidden" name="id" value="{{id}}" />
+              <input type="submit" value="Delete" />
+            </form>
+          </td>
+        </tr>
+      {{else}}
+        <tr>
+          <td colspan="5">No Data Available</td>
+        </tr>
+      {{/each}}
+    </table>
+
+
+    
+
+
+
+
+
+    <br>
+    <br>
+
+    <footer>
+
+        
+        <section id= container_footer>
+          <div ><h2 class="title_2f">The Meal Factory</h2></div>
+          <div >Follow Us On: </div>
+          <div >Instagram <i class="material-icons"> photo_camera </i> </div>
+          <div>Youtube  <i class="material-icons"> shop </i></div>
+          <div>Twitter <i class="material-icons"> emoji_nature </i> </div>
+
+      </section>
+
+      </footer>
+  <section id="container_h_im">
+
+
+
+
+
+    
+</body>
+</html>
