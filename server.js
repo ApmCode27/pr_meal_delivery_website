@@ -43,13 +43,13 @@ app.use(express.urlencoded({ extended: false }));
 // Connection to data base
 
 const sequelize = new Sequelize(
-  "d7cslq1fbjg7ou",
-  "zakhtaauvhdwov",
-  "74f631f2edca9c8f683cd670891a71be96ed5d1c62d0f72b42c8ba8893c49d2d",
+  "---------",
+  "----------",
+  "------------------",
   {
-    host: "ec2-34-228-100-83.compute-1.amazonaws.com",
+    host: "-----------",
     dialect: "postgres",
-    port: 5432,
+    port: --------,
     dialectOptions: {
       ssl: { rejectUnauthorized: false },
     },
